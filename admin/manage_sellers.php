@@ -35,7 +35,7 @@ if (isset($_GET['delete'])) {
         .sidebar {
             width: 250px;
             height: 100vh;
-            background-color: #2c3e50;
+            background-color:  rgb(172, 9, 190);
             color: white;
             padding-top: 20px;
             position: fixed;
@@ -87,7 +87,7 @@ if (isset($_GET['delete'])) {
         }
 
         th {
-            background-color: #bfa378;
+            background-color: rgb(69, 23, 235);
             color: white;
         }
 
@@ -108,7 +108,7 @@ if (isset($_GET['delete'])) {
 <body>
     <div class="sidebar">
         <h2>Electronics Store Admin</h2>
-        <a href="admin_dashboard.php">Dashboard</a>
+        <a href="dashboard.php">Dashboard</a>
         <a href="manage_users.php">Manage Users</a>
         <a href="manage_sellers.php">Manage Sellers</a>
         <a href="manage_products.php">Manage Products</a>

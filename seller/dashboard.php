@@ -68,16 +68,19 @@ $stmt->close();
     /* Basic Advanced Styling */
     body {
       font-family: 'Barlow', sans-serif;
-      background: #fafafa;
+      background:white;
       margin: 0;
       padding: 0;
       color: #333;
     }
     header {
-      background: #333;
+      background: rgb(20, 2, 100);
       color: #fff;
-      padding: 15px 0;
+      padding: 20px 0;
       text-align: center;
+    }
+    h2{
+      font-size: 30px;
     }
     .nav-container {
       display: flex;
@@ -85,6 +88,7 @@ $stmt->close();
       align-items: center;
       width: 80%;
       margin: auto;
+      font-size: 1.3em;
     }
     .nav-container nav a {
       margin: 0 10px;
@@ -92,7 +96,7 @@ $stmt->close();
       text-decoration: none;
     }
     .nav-container nav a:hover {
-      text-decoration: underline;
+      background-color  : red;
     }
     .dashboard-container {
       width: 80%;
@@ -114,10 +118,10 @@ $stmt->close();
       margin-bottom: 10px;
     }
     h2.section-title {
-      border-bottom: 2px solid #bfa378;
+      border-bottom: 5px solid rgb(30, 5, 144);
       padding-bottom: 5px;
       margin-bottom: 20px;
-      color: #bfa378;
+      color: rgb(69, 23, 235);
     }
     .products-container, .orders-container {
       margin-bottom: 40px;
@@ -159,15 +163,15 @@ $stmt->close();
       text-align: left;
     }
     .order-table th {
-      background: #f2f2f2;
+      background: rgb(69, 23, 235);
     }
     .order-table tr:hover {
-      background: #f9f9f9;
+      background: red;
     }
     .btn {
       display: inline-block;
       padding: 10px 15px;
-      background: #bfa378;
+      background: rgb(69, 23, 235);
       color: #fff;
       border: none;
       border-radius: 4px;
@@ -176,7 +180,7 @@ $stmt->close();
       margin: 10px 5px;
     }
     .btn:hover {
-      background: #a48f64;
+      background: red;
     }
     .clear {
       clear: both;
@@ -206,7 +210,7 @@ $stmt->close();
       <h2><?= htmlspecialchars($user['name']) ?></h2>
     </div> -->
     <!-- Products Section -->
-    <h2 class="section-title">Your Products</h2>
+    <h2 class="section-title">Your  Selling Products</h2>
     <div class="products-container">
       <?php if ($products->num_rows > 0): ?>
         <?php while ($product = $products->fetch_assoc()): ?>

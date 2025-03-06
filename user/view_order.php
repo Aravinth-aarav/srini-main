@@ -52,7 +52,7 @@ $order = $result->fetch_assoc();
             color: #333;
         }
         header {
-            background: #333;
+            background: rgb(20, 2, 100);
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -63,6 +63,7 @@ $order = $result->fetch_assoc();
             align-items: center;
             width: 80%;
             margin: auto;
+            font-size: 30px;
         }
         nav a {
             color: white;
@@ -78,10 +79,10 @@ $order = $result->fetch_assoc();
             box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
         }
         .order-header {
-            border-bottom: 2px solid #bfa378;
+            border-bottom: 2px solid black;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            color: #bfa378;
+            color: black;
         }
         .order-details {
             margin-bottom: 20px;
@@ -90,13 +91,13 @@ $order = $result->fetch_assoc();
         .back-link {
             display: inline-block;
             padding: 10px 15px;
-            background: #bfa378;
+            background: blue;
             color: white;
             text-decoration: none;
             border-radius: 4px;
         }
         .back-link:hover {
-            background: #a48f64;
+            background: red;
         }
     </style>
 </head>

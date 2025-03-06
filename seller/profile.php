@@ -75,8 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-family: 'Barlow', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1532582240745-b1952b26e848') no-repeat center center fixed;
-            background-size: cover;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -88,15 +86,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(195, 125, 181, 0.34);
         }
         .container {
             background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 500px;
-            padding: 30px;
+            padding: 80px;
             box-sizing: border-box;
             position: relative;
             z-index: 1;
@@ -105,6 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
+            font-size: 40px;
         }
         form {
             display: flex;
@@ -117,12 +116,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 16px;
+            font-size: 20px;
             width: 100%;
         }
         button {
             padding: 12px 20px;
-            background-color: #bfa378;
+            background-color: rgb(20, 2, 100);
             color: white;
             border: none;
             border-radius: 4px;
@@ -131,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #a48f64;
+            background-color: red;
         }
         .message {
             padding: 10px;
@@ -158,7 +157,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #f0ad4e;
+            background-color:rgb(20, 2, 100);
             color: white;
             border-radius: 4px;
             text-align: center;
@@ -167,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             transition: background-color 0.3s;
         }
         .back-button:hover {
-            background-color: #ec971f;
+            background-color: red;
         }
     </style>
 </head>

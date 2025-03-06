@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         /* General Styling */
         body {
+            
             font-family: 'Barlow', sans-serif;
             background-color: #f4f4f9;
             margin: 0;
@@ -60,13 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         a:hover {
-            color: #bfa378;
+            color: red;
         }
 
         /* Navbar Styling */
         nav {
-            background-color: #333;
-            padding: 10px 0;
+            background-color: rgb(20, 2, 100);
+            padding: 30px 0;
         }
 
         .navbar-container {
@@ -79,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 40px;
             font-weight: 600;
             color: #fff;
         }
@@ -91,13 +92,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .navbar-links li a {
-            color: #fff;
+            color: white;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 23px;
         }
 
         .navbar-links li a:hover {
-            color: #bfa378;
+            color: red;
         }
 
         /* Register Section Styling */
@@ -106,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin: 50px auto;
             padding: 30px;
             background-color: #fff;
-            border-radius: 8px;
+            border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .register-container:hover{
@@ -123,8 +124,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .subtext {
             text-align: center;
-            color: #777;
+            color: black;
             margin-bottom: 30px;
+            font-size: 20px;
         }
 
         .input-group {
@@ -151,11 +153,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         input[type="email"]:focus,
         input[type="password"]:focus,
         select:focus {
-            border-color: #bfa378;
+            border-color: red;
         }
 
         label {
-            font-size: 14px;
+            font-size: 18px;
             color: #555;
             position: absolute;
             top: -8px;
@@ -170,14 +172,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         input[type="password"]:focus + label,
         select:focus + label {
             font-size: 12px;
-            color: #bfa378;
+            color: red;
             top: -18px;
         }
 
         .register-button {
             width: 100%;
             padding: 12px;
-            background-color: #bfa378;
+            background-color: rgb(20, 2, 100);
             color: #fff;
             font-size: 18px;
             font-weight: 600;
@@ -188,7 +190,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .register-button:hover {
-            background-color: #a48f64;
+            background-color:red;
         }
 
         /* Status Message Styling */
@@ -208,11 +210,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         /* Footer Styling */
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: black;
+            color: white;
             padding: 20px 0;
             text-align: center;
-            font-size: 14px;
+            font-size: 18px;
         }
 
         footer p {
@@ -236,8 +238,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Register Section -->
     <div class="register-container">
-        <h2>Join Srinivasa Electronics Today!</h2>
-        <p class="subtext">Sign up and explore our exclusive collection of premium Electronics.</p>
+        <h2>Register</h2>
+        <p class="subtext">Sign up and view your Electronics.</p>
 
         <!-- Display Status Message (Success/Error) -->
         <?php if ($status_message != ''): ?>
@@ -261,15 +263,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="input-group">
                 <select name="role" required>
+                    <option value="admin">Admin</option>
                     <option value="seller">Seller</option>
                     <option value="user">User</option>
-                    <option value="admin">Admin</option>
+                  
                 </select>
                 <label>Role</label>
             </div>
             <button type="submit" class="register-button">Register</button>
         </form>
-        <p style="text-align: center;">Already have an account? <a href="login.php">Login</a></p>
+        <p style="text-align: center;font-size:20px;color:black;">Already have an account? <a href="login.php">Login</a></p>
     </div>
 
     <!-- Footer -->

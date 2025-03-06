@@ -48,10 +48,11 @@ if (!file_exists($image_path) || empty($product['image'])) {
       color: #333;
     }
     header {
-      background: #333;
+      background: rgb(20, 2, 100);
       padding: 15px 0;
       color: #fff;
       text-align: center;
+      font-size: 30px;
     }
     .nav-container {
       width: 80%;
@@ -89,15 +90,15 @@ if (!file_exists($image_path) || empty($product['image'])) {
     .product-title {
       font-size: 2em;
       margin-bottom: 10px;
-      color: #bfa378;
+      color: black;
     }
     .product-price {
-      font-size: 1.5em;
+      font-size: 1.8em;
       margin-bottom: 15px;
-      color: #333;
+      color: black;
     }
     .product-description {
-      font-size: 1.1em;
+      font-size: 1.3em;
       line-height: 1.6;
       color: #555;
     }
@@ -105,7 +106,7 @@ if (!file_exists($image_path) || empty($product['image'])) {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
-      background: #007bff;
+      background: rgb(20, 2, 100);
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
@@ -115,13 +116,14 @@ if (!file_exists($image_path) || empty($product['image'])) {
       cursor: pointer;
     }
     .btn:hover {
-      background: #0056b3;
+      background: red;
     }
     .buy-now {
-      background: #28a745;
+      background: red;
+      
     }
     .buy-now:hover {
-      background: #218838;
+      background: red;
     }
   </style>
 </head>

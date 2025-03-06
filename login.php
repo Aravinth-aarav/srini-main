@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         /* Navbar Styling */
         nav {
             background-color: rgb(20, 2, 100);
-            padding: 50px 0;
+            padding: 30px 0;
             
         }
         .navbar-container {
@@ -192,9 +192,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         footer {
             background-color: black;
             color: white;
-            padding: 30px 0;
+            padding: 35px ;
             text-align: center;
-            font-size: 14px;
+            font-size: 20px;
         }
         footer p {
             margin: 0;
@@ -217,7 +217,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Login Section -->
     <div class="login-container">
-        <h2>Welcome Back to Srinivasa Electronics</h2>
+        <h2>Welcome to Srinivasa Electronics</h2>
       
         <?php 
         // Display Success Message
@@ -243,7 +243,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <button type="submit" class="login-button">Login</button>
         </form>
-        <p style="text-align:center; color:black;font-size:20px;">Don't have an account? <a href="register.php">Register</a></p>
+        <p style="text-align:center; color:black;font-size:20px;">Don't have an account? <a href="register.php" style="text-decoration:underline;">Register</a></p>
     </div>
 
     <!-- Footer -->

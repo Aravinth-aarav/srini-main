@@ -61,7 +61,7 @@ $user_orders = $stmt->get_result();
             color: #333;
         }
         header {
-            background: #333;
+            background: rgb(20, 2, 100);
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -72,6 +72,7 @@ $user_orders = $stmt->get_result();
             align-items: center;
             width: 80%;
             margin: auto;
+            font-size: 25px;
         }
         nav a {
             color: white;
@@ -87,10 +88,10 @@ $user_orders = $stmt->get_result();
             box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
         }
         h2.section-title {
-            border-bottom: 2px solid #bfa378;
+            border-bottom: 2px solid black;
             padding-bottom: 5px;
             margin-bottom: 20px;
-            color: #bfa378;
+            color:black;
         }
         .product-container, .order-container {
             display: flex;
@@ -136,14 +137,15 @@ $user_orders = $stmt->get_result();
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #bfa378;
+            background: rgb(20, 2, 100);
             color: white;
             text-decoration: none;
             border-radius: 4px;
         }
         .shop-link:hover {
-            background: #a48f64;
+            background: red;
         }
+    
     </style>
 </head>
 <body>
@@ -178,7 +180,7 @@ $user_orders = $stmt->get_result();
                         </div>
                         <p class="order-total"><strong>Total:</strong> $<?= number_format($order['total'], 2) ?></p>
                         <p class="order-date"><strong>Date:</strong> <?= $order['created_at'] ?></p>
-                        <a href="view_order.php?id=<?= $order['id'] ?>" class="shop-link" style="background:#3498db;">View Order</a>
+                        <a href="view_order.php?id=<?= $order['id'] ?>" class="shop-link" style="rgb(20, 2, 100);">View Order</a>
                     </div>
                 <?php endwhile; ?>
             <?php else: ?>

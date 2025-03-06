@@ -48,9 +48,11 @@ if (!$result) {
             gap: 20px;
         }
         .product-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            max-width: 500px;
+            max-height: 1000px;
+            background-color: rgba(158, 245, 171, 0.1);
+            border: 5px solid #ddd;
+            border-radius: 20px;
             overflow: hidden;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -70,11 +72,13 @@ if (!$result) {
         .product-title {
             font-size: 1.3em;
             margin: 10px 0;
-            color: rgb(184, 66, 127);
+            color: blue;
         }
         .product-price {
             font-size: 1.1em;
-            color: #333;
+            color: blueviolet;
+            font-size: 30px;
+            font-weight: bold;
         }
         .view-btn, .buy-btn {
             display: inline-block;

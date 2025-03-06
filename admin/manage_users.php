@@ -28,7 +28,7 @@ $result = $conn->query($sql);
         }
 
         header {
-            background-color: #1f1f1f;
+            background-color: rgb(69, 23, 235);
             color: white;
             padding: 10px 20px;
             text-align: center;

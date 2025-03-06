@@ -31,10 +31,11 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
         .sidebar {
             width: 250px;
             height: 100vh;
-            background-color: #2c3e50;
+            background-color:  rgb(172, 9, 190);
             color: white;
             padding-top: 20px;
             position: fixed;
+            font-weight: bold;
         }
 
         .sidebar h2 {
@@ -54,7 +55,8 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
         }
 
         .sidebar a:hover {
-            background-color: #34495e;
+            background-color:rgb(228, 157, 232);
+            color: black;
         }
 
         .main-content {
@@ -83,7 +85,7 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
         .stats-card h3 {
             font-size: 30px;
             margin-bottom: 10px;
-            color: #bfa378;
+            color:rgb(3, 9, 0);
         }
 
         .stats-card p {
@@ -92,7 +94,7 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
 
         .stats-card .btn {
             display: inline-block;
-            background-color: #bfa378;
+            background-color:rgb(69, 23, 235);
             padding: 10px 20px;
             color: white;
             border-radius: 4px;
@@ -103,11 +105,11 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
         }
 
         .stats-card .btn:hover {
-            background-color: #a68d5e;
+            background-color:rgb(81, 83, 172);
         }
 
         footer {
-            background-color: #2c3e50;
+            background-color:   rgb(172, 9, 190);
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -120,7 +122,7 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
 <body>
     <div class="sidebar">
         <h2>Electronics Store Admin</h2>
-        <a href="admin_dashboard.php">Dashboard</a>
+        <a href="dashboard.php">Dashboard</a>
         <a href="manage_users.php">Manage Users</a>
         <a href="manage_sellers.php">Manage Sellers</a>
         <a href="manage_products.php">Manage Products</a>
@@ -129,7 +131,7 @@ $order_count = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
     </div>
 
     <div class="main-content">
-        <h2>Welcome, Admin!</h2>
+        <h2>Let's Work Begin...!</h2>
         <div class="stats-card">
             <h3><?= $user_count ?></h3>
             <p>Total Users</p>

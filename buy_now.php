@@ -87,14 +87,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['confirm_purchase'])) 
       color: #333;
     }
     header {
-      background: #333;
+      background: rgb(20, 2, 100);
       color: #fff;
       padding: 15px 0;
       text-align: center;
+      font-size: 30px;
     }
     /* Navbar */
     nav {
-            background-color:rgb(184, 66, 127);
+            
             padding: 15px 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -132,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['confirm_purchase'])) 
         }
 
         nav .navbar-links a:hover {
-            color:rgb(6, 125, 176); /* Secondary Color: a warm accent */
+            color:rgb(20, 2, 100); /* Secondary Color: a warm accent */
         }
     .product-container {
       width: 80%;
@@ -160,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['confirm_purchase'])) 
     .product-title {
       font-size: 2em;
       margin-bottom: 10px;
-      color: #bfa378;
+      color: black;
     }
     .product-price {
       font-size: 1.5em;
@@ -177,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['confirm_purchase'])) 
       display: inline-block;
       background: #28a745;
       color: #fff;
-      padding: 10px 20px;
+      padding: 20px 20px;
       border-radius: 4px;
       text-decoration: none;
       cursor: pointer;
@@ -185,13 +186,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['confirm_purchase'])) 
       margin-right: 10px;
     }
     .btn:hover {
-      background: #218838;
+      background: red;
     }
     .back-btn {
-      background: #007bff;
+      background: blue;
     }
     .back-btn:hover {
-      background: #0056b3;
+      background: red;
     }
     .message {
       margin-top: 20px;

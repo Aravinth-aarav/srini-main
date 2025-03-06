@@ -261,8 +261,8 @@ session_start();
 
     <!-- Hero Section -->
     <div class="hero-section">
-      <h2>Top Quality Electronics</h2>
-      <h4>Discover your Electronics</h4>
+      <h2>Quality and Cheapest Electronics</h2>
+      <h4>Click shop now see your Electronics</h4>
       <a href="shop.php" class="hero-button">Shop Now</a>
     </div>
 

@@ -46,8 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-family: 'Barlow', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1532582240745-b1952b26e848') no-repeat center center fixed;
-            background-size: cover;
+            background-color: white;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -61,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(141, 137, 92, 0.34);
+            background: rgba(195, 125, 181, 0.34);
         }
 
         /* Form container styling */
@@ -98,6 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-radius: 4px;
             font-size: 16px;
             width: 100%;
+            color: black;
         }
 
         textarea {
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         button {
             padding: 12px 20px;
-            background-color: #6C63FF;
+            background-color: rgb(20, 2, 100);
             color: white;
             border: none;
             border-radius: 4px;
@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         button:hover {
-            background-color: #5752d6;
+            background-color: red;
         }
 
         .message {
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #f0ad4e;
+            background-color: rgb(20, 2, 100);
             color: white;
             border-radius: 4px;
             text-align: center;
@@ -152,8 +152,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .back-button:hover {
-            background-color: #ec971f;
+            background-color: red;
         }
+        
 
         @media (max-width: 600px) {
             .container {
